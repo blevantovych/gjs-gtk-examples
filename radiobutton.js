@@ -11,7 +11,7 @@ function on_radio_button_toggled(widget)
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
-window.set_title("CheckButton");
+window.set_title("RadioButton");
 window.connect("destroy", Gtk.main_quit);
 
 let grid = new Gtk.Grid()
