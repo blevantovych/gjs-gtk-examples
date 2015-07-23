@@ -16,7 +16,7 @@ let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_title("ToggleButton");
 window.connect("destroy", Gtk.main_quit);
 
-let grid = new Gtk.Grid()
+let grid = new Gtk.Grid();
 window.add(grid);
 
 let togglebutton1 = new Gtk.ToggleButton({label: "togglebutton 1"});
