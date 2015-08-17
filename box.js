@@ -6,7 +6,7 @@ Gtk.init(null);
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_default_size(200, 200);
-window.set_title("Button");
+window.set_title("Box");
 window.connect("destroy", Gtk.main_quit);
 
 let box1 = new Gtk.Box();

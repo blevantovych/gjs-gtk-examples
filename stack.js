@@ -10,7 +10,7 @@ function on_page_clicked(page)
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
-window.set_title("Spinner");
+window.set_title("Stack");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);
 

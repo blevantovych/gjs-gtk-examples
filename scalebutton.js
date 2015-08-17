@@ -10,7 +10,7 @@ function on_scale_changed(scalebutton)
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
-window.set_title("Scale");
+window.set_title("ScaleButton");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);
 

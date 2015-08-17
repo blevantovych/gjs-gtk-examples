@@ -5,18 +5,15 @@ const Gtk = imports.gi.Gtk;
 Gtk.init(null);
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
-window.set_title("Frame");
+window.set_title("Expander");
 window.set_default_size(200, 200);
-window.set_border_width(5);
 window.connect("destroy", Gtk.main_quit);
 
-let frame = new Gtk.Frame();
-frame.set_label("Frame Example");
-window.add(frame);
+let expander = new Gtk.Expander({label: "Click to open/close"});
+window.add(expander);
 
-let label = new Gtk.Label();
-label.set_label("Label in a Frame")
-frame.add(label);
+let label1 = new Gtk.Label({label: "Label contained within\nan Expander"});
+expander.add(label1);
 
 window.show_all();
 

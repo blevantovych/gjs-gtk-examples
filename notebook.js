@@ -5,7 +5,7 @@ const Gtk = imports.gi.Gtk;
 Gtk.init(null);
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
-window.set_title("Spinner");
+window.set_title("Notebook");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);
 
