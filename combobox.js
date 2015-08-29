@@ -17,7 +17,6 @@ function on_combobox_changed(combobox)
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
-window.set_default_size(200, -1);
 window.set_title("ComboBox");
 window.connect("destroy", Gtk.main_quit);
 
