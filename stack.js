@@ -4,9 +4,9 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_page_clicked(page)
+function on_page_clicked(widget)
 {
-    stack.set_visible_child_name(page);
+    stack.set_visible_child_name(widget.page);
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
@@ -20,20 +20,22 @@ window.add(grid);
 let stack = new Gtk.Stack();
 stack.set_vexpand(true);
 stack.set_hexpand(true);
-grid.attach(stack, 0, 0, 2, 1);
+grid.attach(stack, 0, 0, 6, 1);
 
-let label = new Gtk.Label({label: "Page 1"});
-stack.add_named(label, "Page1");
+var i;
 
-let label = new Gtk.Label({label: "Page 2"});
-stack.add_named(label, "Page2");
+for (i = 1; i < 6; i++)
+{
+    var name = i.toString();
 
-let button = new Gtk.Button({label: "Page 1"});
-button.connect("clicked", function() {on_page_clicked("Page1")});
-grid.attach(button, 0, 1, 1, 1);
-let button = new Gtk.Button({label: "Page 2"});
-button.connect("clicked", function() {on_page_clicked("Page2")});
-grid.attach(button, 1, 1, 1, 1);
+    let label = new Gtk.Label({label: "Page " + name});
+    stack.add_named(label, name);
+
+    let button = new Gtk.Button({label: "Page " + name});
+    button.page = name
+    button.connect("clicked", function() {on_page_clicked(button)});
+    grid.attach(button, i, 1, 1, 1);
+}
 
 window.show_all();
 
