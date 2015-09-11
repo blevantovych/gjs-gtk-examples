@@ -6,7 +6,6 @@ Gtk.init(null);
 
 function on_info_bar_changed(button)
 {
-    print(button.message_type)
     infobar.show();
     infobar.set_message_type(button.message_type);
 }
