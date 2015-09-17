@@ -6,7 +6,7 @@ Gtk.init(null);
 
 function on_search_entry_activated(searchentry)
 {
-    print(searchentry.get_text());
+    print("SearchEntry text: '" + searchentry.get_text() + "'");
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});

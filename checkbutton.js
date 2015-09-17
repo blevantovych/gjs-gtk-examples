@@ -4,7 +4,7 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_check_button_toggled(widget)
+function on_check_button_toggled()
 {
     if (checkbutton.get_active())
         print("CheckButton toggled on");
