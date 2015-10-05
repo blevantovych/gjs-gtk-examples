@@ -1,4 +1,4 @@
-#!/usr/bin/gjs
+#!/usr/bin/env gjs
 
 const Gtk = imports.gi.Gtk;
 
@@ -6,7 +6,7 @@ Gtk.init(null);
 
 function on_entry_activated()
 {
-    print("Entry text: '" + entry.get_text() + "'")
+    print("Entry text: '" + entry.get_text() + "'");
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
