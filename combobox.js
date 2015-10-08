@@ -1,4 +1,4 @@
-#!/usr/bin/gjs
+#!/usr/bin/env gjs
 
 const Gtk = imports.gi.Gtk;
 const GObject = imports.gi.GObject
