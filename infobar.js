@@ -21,7 +21,6 @@ window.connect("destroy", Gtk.main_quit);
 
 let grid = new Gtk.Grid();
 grid.set_row_spacing(5);
-grid.set_column_spacing(5);
 window.add(grid);
 
 let label = new Gtk.Label({label: "An InfoBar used to display messages."});
@@ -53,6 +52,10 @@ let buttonError = new Gtk.Button({label: "Error"});
 buttonError.message_type = Gtk.MessageType.ERROR
 buttonError.connect("clicked", function() {on_info_bar_changed(buttonError)});
 buttonbox.add(buttonError);
+let buttonOther = new Gtk.Button({label: "Other"});
+buttonOther.message_type = Gtk.MessageType.OTHER
+buttonOther.connect("clicked", function() {on_info_bar_changed(buttonOther)});
+buttonbox.add(buttonOther);
 
 window.show_all();
 
