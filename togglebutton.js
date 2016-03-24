@@ -4,12 +4,12 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_toggle_button_toggled(widget)
+function on_toggle_button_toggled(togglebutton)
 {
-    if (widget.get_active())
-        print("ToggleButton " + widget.value + " toggled on")
+    if (togglebutton.get_active())
+        print("ToggleButton " + togglebutton.value + " toggled on")
     else
-        print("ToggleButton " + widget.value + " toggled off")
+        print("ToggleButton " + togglebutton.value + " toggled off")
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});

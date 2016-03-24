@@ -4,10 +4,10 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_radio_button_toggled(widget)
+function on_radio_button_toggled(radiobutton)
 {
-    if (widget.get_active())
-        print("RadioButton " + widget.value + " toggled")
+    if (radiobutton.get_active())
+        print("RadioButton " + radiobutton.value + " toggled")
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});

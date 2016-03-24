@@ -6,7 +6,7 @@ Gtk.init(null);
 
 function on_spin_button_changed(spinbutton)
 {
-    print(spinbutton.get_value_as_int());
+    print("SpinButton value: " + spinbutton.get_value_as_int());
 }
 
 let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});

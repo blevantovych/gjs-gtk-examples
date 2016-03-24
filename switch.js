@@ -4,9 +4,9 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_switch_toggled(widget)
+function on_switch_toggled(switch1)
 {
-    if (widget.get_active())
+    if (switch1.get_active())
         print("Switch toggled on")
     else
         print("Switch toggled off")
