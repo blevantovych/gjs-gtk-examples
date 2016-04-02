@@ -4,7 +4,7 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-let dialog = new Gtk.Dialog();
+var dialog = new Gtk.Dialog();
 dialog.set_title("Dialog")
 dialog.set_default_size(200, 200);
 dialog.add_button("_OK", Gtk.ResponseType.OK);

@@ -15,29 +15,29 @@ function on_radio_button_toggled(radiobutton)
     }
 }
 
-let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_title("Paned");
 window.set_default_size(300, 300);
 window.connect("destroy", Gtk.main_quit);
 
-let grid = new Gtk.Grid();
+var grid = new Gtk.Grid();
 window.add(grid);
 
-let paned = new Gtk.Paned();
+var paned = new Gtk.Paned();
 paned.set_vexpand(true);
 paned.set_hexpand(true);
 grid.attach(paned, 0, 0, 2, 1);
 
-let label1 = new Gtk.Label({label: "Label in Paned section 1"});
+var label1 = new Gtk.Label({label: "Label in Paned section 1"});
 paned.add1(label1);
-let label2 = new Gtk.Label({label: "Label in Paned section 2"});
+var label2 = new Gtk.Label({label: "Label in Paned section 2"});
 paned.add2(label2);
 
-let radiobutton1 = new Gtk.RadioButton({label: "Vertical"});
+var radiobutton1 = new Gtk.RadioButton({label: "Vertical"});
 radiobutton1.connect("toggled", function() {on_radio_button_toggled(radiobutton1)});
 radiobutton1.id = 1;
 grid.attach(radiobutton1, 0, 1, 1, 1);
-let radiobutton2 = new Gtk.RadioButton({label: "Horizontal"});
+var radiobutton2 = new Gtk.RadioButton({label: "Horizontal"});
 radiobutton2.id = 2;
 radiobutton2.join_group(radiobutton1);
 radiobutton2.set_active(true);

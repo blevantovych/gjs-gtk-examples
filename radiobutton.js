@@ -10,19 +10,19 @@ function on_radio_button_toggled(radiobutton)
         print("RadioButton " + radiobutton.value + " toggled")
 }
 
-let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_title("RadioButton");
 window.connect("destroy", Gtk.main_quit);
 
-let grid = new Gtk.Grid()
+var grid = new Gtk.Grid()
 window.add(grid);
 
-let radiobutton1 = new Gtk.RadioButton({label: "RadioButton 1"});
+var radiobutton1 = new Gtk.RadioButton({label: "RadioButton 1"});
 radiobutton1.value = 1;
 radiobutton1.connect("toggled", function() {on_radio_button_toggled(radiobutton1)})
 grid.attach(radiobutton1, 0, 0, 1, 1);
 
-let radiobutton2 = new Gtk.RadioButton({label: "RadioButton 2"});
+var radiobutton2 = new Gtk.RadioButton({label: "RadioButton 2"});
 radiobutton2.value = 2;
 radiobutton2.connect("toggled", function() {on_radio_button_toggled(radiobutton2)})
 radiobutton2.join_group(radiobutton1);

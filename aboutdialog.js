@@ -7,7 +7,7 @@ Gtk.init(null);
 
 var logo = GdkPixbuf.Pixbuf.new_from_file_at_size("gtk.png", 64, 64)
 
-let aboutdialog = new Gtk.AboutDialog();
+var aboutdialog = new Gtk.AboutDialog();
 aboutdialog.set_title("Dialog");
 aboutdialog.set_program_name("Programmica");
 aboutdialog.set_version("1.0");

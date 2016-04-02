@@ -4,7 +4,7 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-let filechooserdialog = new Gtk.FileChooserDialog();
+var filechooserdialog = new Gtk.FileChooserDialog();
 filechooserdialog.set_title("FileChooserDialog");
 filechooserdialog.add_button("Cancel", Gtk.ResponseType.CLOSE);
 filechooserdialog.add_button("Select", Gtk.ResponseType.OK);

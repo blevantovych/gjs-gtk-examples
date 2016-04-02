@@ -9,11 +9,11 @@ function on_entry_activated()
     print("Entry text: '" + entry.get_text() + "'");
 }
 
-let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_title("Entry");
 window.connect("destroy", Gtk.main_quit);
 
-let entry = new Gtk.Entry();
+var entry = new Gtk.Entry();
 entry.connect("activate", function() {on_entry_activated()});
 window.add(entry);
 

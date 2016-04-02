@@ -4,11 +4,11 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_default_size(-1, 200);
 window.connect("destroy", Gtk.main_quit);
 
-let headerbar = new Gtk.HeaderBar();
+var headerbar = new Gtk.HeaderBar();
 headerbar.set_title("HeaderBar");
 headerbar.set_subtitle("With Subtitle");
 headerbar.set_show_close_button(true);

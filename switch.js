@@ -12,11 +12,11 @@ function on_switch_toggled(switch1)
         print("Switch toggled off")
 }
 
-let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_title("Switch");
 window.connect("destroy", Gtk.main_quit);
 
-let switch1 = new Gtk.Switch();
+var switch1 = new Gtk.Switch();
 switch1.connect("notify::active", function() {on_switch_toggled(switch1)});
 window.add(switch1);
 

@@ -22,17 +22,17 @@ function on_checkbutton_toggled(checkbutton)
     progressbar.set_show_text(checkbutton.get_active());
 }
 
-let window = new Gtk.Window();
+var window = new Gtk.Window();
 window.set_title("ProgressBar");
 window.connect("destroy", Gtk.main_quit);
 
-let grid = new Gtk.Grid();
+var grid = new Gtk.Grid();
 window.add(grid);
 
-let progressbar = new Gtk.ProgressBar();
+var progressbar = new Gtk.ProgressBar();
 grid.attach(progressbar, 0, 0, 1, 1);
 
-let checkbutton = new Gtk.CheckButton({label: "Show Text"});
+var checkbutton = new Gtk.CheckButton({label: "Show Text"});
 checkbutton.connect("toggled", on_checkbutton_toggled);
 grid.attach(checkbutton, 1, 0, 1, 1);
 

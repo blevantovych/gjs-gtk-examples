@@ -20,14 +20,14 @@ function on_item_activated(iconview)
     }
 }
 
-let window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
 window.set_title("IconView");
 window.connect("destroy", Gtk.main_quit);
 
-let liststore = new Gtk.ListStore();
+var liststore = new Gtk.ListStore();
 liststore.set_column_types([GObject.TYPE_STRING, GdkPixbuf.Pixbuf, GObject.TYPE_STRING]);
 
-let image = new Gtk.Image();
+var image = new Gtk.Image();
 
 var distributions = ["debian", "fedora", "mandriva", "gentoo", "mepis"]
 
@@ -41,7 +41,7 @@ for (var i = 0; i < distributions.length; i++)
     liststore.set(liststore.append(), [0, 1, 2], [name, image.get_pixbuf(), tooltip]);
 }
 
-let iconview = new Gtk.IconView();
+var iconview = new Gtk.IconView();
 iconview.set_model(liststore);
 iconview.set_text_column(0);
 iconview.set_pixbuf_column(1);
