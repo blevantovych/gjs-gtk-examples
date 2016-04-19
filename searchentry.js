@@ -9,7 +9,7 @@ function on_search_entry_activated(searchentry)
     print("SearchEntry text: '" + searchentry.get_text() + "'");
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("SearchEntry");
 window.connect("destroy", Gtk.main_quit);
 

@@ -4,12 +4,12 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_button_clicked()
+function on_popover_launched()
 {
     popover.show_all();
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_default_size(250, 250);
 window.set_title('Popover');
 window.connect('destroy', Gtk.main_quit);
@@ -19,7 +19,7 @@ box.set_orientation(Gtk.Orientation.VERTICAL);
 window.add(box);
 
 var button = new Gtk.Button({label: 'Popover Launcher'});
-button.connect('clicked', on_button_clicked);
+button.connect('clicked', on_popover_launched);
 box.add(button);
 
 var popover = new Gtk.Popover();

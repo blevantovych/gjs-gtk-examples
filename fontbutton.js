@@ -9,7 +9,7 @@ function on_font_button_font_set(fontbutton)
     print(fontbutton.get_font())
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("FontButton");
 window.connect("destroy", Gtk.main_quit);
 

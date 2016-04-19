@@ -10,7 +10,7 @@ function on_button_clicked(widget)
     Gtk.main_quit();
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_default_size(600, 400);
 window.set_border_width(5);
 window.set_title("FileChooserWidget");

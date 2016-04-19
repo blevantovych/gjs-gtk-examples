@@ -20,7 +20,7 @@ function on_item_activated(iconview)
     }
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("IconView");
 window.connect("destroy", Gtk.main_quit);
 

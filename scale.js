@@ -9,7 +9,7 @@ function on_scale_changed(scale)
     print(scale.get_value());
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Scale");
 window.set_default_size(200, -1);
 window.connect("destroy", Gtk.main_quit);

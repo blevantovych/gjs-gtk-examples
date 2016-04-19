@@ -15,7 +15,7 @@ function on_radio_button_toggled(radiobutton)
     }
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Paned");
 window.set_default_size(300, 300);
 window.connect("destroy", Gtk.main_quit);

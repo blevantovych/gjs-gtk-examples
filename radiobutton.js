@@ -10,7 +10,7 @@ function on_radio_button_toggled(radiobutton)
         print("RadioButton " + radiobutton.value + " toggled")
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("RadioButton");
 window.connect("destroy", Gtk.main_quit);
 

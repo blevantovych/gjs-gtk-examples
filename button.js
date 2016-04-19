@@ -9,7 +9,7 @@ function on_button_clicked()
     print("Button clicked!");
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Button");
 window.connect("destroy", Gtk.main_quit);
 

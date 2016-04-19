@@ -9,7 +9,7 @@ function on_entry_activated()
     print("Entry text: '" + entry.get_text() + "'");
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Entry");
 window.connect("destroy", Gtk.main_quit);
 

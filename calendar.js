@@ -28,7 +28,7 @@ function on_show_weeks_toggled(checkbutton)
     calendar.set_property("show-week-numbers", active);
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Calendar");
 window.connect("destroy", Gtk.main_quit);
 

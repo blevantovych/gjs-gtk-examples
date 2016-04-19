@@ -9,7 +9,7 @@ function on_search_bar_toggled()
     searchbar.set_search_mode(checkbutton.get_active());
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("SearchBar");
 window.connect("destroy", Gtk.main_quit);
 

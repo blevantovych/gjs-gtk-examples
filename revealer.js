@@ -12,7 +12,7 @@ function on_button_clicked(widget)
         revealer.set_reveal_child(true);
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Revealer");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);

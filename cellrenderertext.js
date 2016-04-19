@@ -11,7 +11,7 @@ function on_cell_edited(cellrenderertext, treepath, text)
     liststore.set(treeiter, [1], [text]);
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("CellRendererText");
 window.connect("destroy", Gtk.main_quit);
 

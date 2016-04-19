@@ -9,7 +9,7 @@ function on_combobox_changed(combobox)
     print(combobox.get_active_text());
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("ComboBoxText");
 window.connect("destroy", Gtk.main_quit);
 

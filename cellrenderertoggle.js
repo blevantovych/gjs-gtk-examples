@@ -13,7 +13,7 @@ function on_cell_toggled(cellrenderertoggle, treepath)
     liststore.set(treeiter, [1], [active]);
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("CellRendererToggle");
 window.connect("destroy", Gtk.main_quit);
 

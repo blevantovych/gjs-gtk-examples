@@ -9,7 +9,7 @@ function on_page_clicked(widget)
     stack.set_visible_child_name(widget.page);
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Stack");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);

@@ -20,7 +20,7 @@ function on_radio_button_toggled(radiobutton)
         }
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("EntryCompvarion");
 window.connect("destroy", Gtk.main_quit);
 

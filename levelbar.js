@@ -24,7 +24,7 @@ function on_decrease_clicked()
     }
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("LevelBar");
 window.connect("destroy", Gtk.main_quit);
 

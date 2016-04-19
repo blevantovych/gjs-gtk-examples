@@ -14,7 +14,7 @@ function on_button_stop_clicked()
     spinner.stop();
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("Spinner");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);

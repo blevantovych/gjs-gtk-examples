@@ -10,7 +10,7 @@ function on_app_chooser_changed(appchooserbutton)
     print("Selected application: " + info.get_name())
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("AppChooserButton");
 window.set_default_size(200, -1);
 window.connect("destroy", Gtk.main_quit);

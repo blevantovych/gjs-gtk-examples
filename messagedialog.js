@@ -11,7 +11,7 @@ function on_button_clicked(button)
     messagedialog.hide();
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("MessageDialog");
 window.connect("destroy", Gtk.main_quit);
 

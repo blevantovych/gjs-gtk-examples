@@ -9,7 +9,7 @@ function on_file_set(widget)
     print("Selected file: " + widget.get_filename());
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_default_size(200, -1);
 window.set_title("FileChooserButton");
 window.connect("destroy", Gtk.main_quit);

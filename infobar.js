@@ -15,7 +15,7 @@ function on_info_bar_close()
     infobar.hide();
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("InfoBar");
 window.connect("destroy", Gtk.main_quit);
 

@@ -12,7 +12,7 @@ function on_color_activated(colorchooserwidget)
     print("Blue: " + rgba.blue);
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("ColorChooserWidget");
 window.set_border_width(5);
 window.connect("destroy", Gtk.main_quit);

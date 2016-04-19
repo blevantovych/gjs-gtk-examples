@@ -9,7 +9,7 @@ function on_spin_button_changed(spinbutton)
     print("SpinButton value: " + spinbutton.get_value_as_int());
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("SpinButton");
 window.connect("destroy", Gtk.main_quit);
 
