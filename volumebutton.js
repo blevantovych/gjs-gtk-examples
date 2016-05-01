@@ -9,7 +9,7 @@ function on_volume_changed(volumebutton)
     print("Current volume: " + volumebutton.get_value());
 }
 
-var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});
+var window = new Gtk.Window();
 window.set_title("VolumeButton");
 window.set_default_size(200, 200);
 window.connect("destroy", Gtk.main_quit);
