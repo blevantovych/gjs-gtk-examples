@@ -6,7 +6,7 @@ Gtk.init(null);
 
 function on_scale_changed(scalebutton)
 {
-    print(scalebutton.get_value());
+    print("ScaleButton value: " + scalebutton.get_value());
 }
 
 var window = new Gtk.Window();

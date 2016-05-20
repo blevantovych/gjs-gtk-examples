@@ -19,7 +19,7 @@ window.connect("destroy", Gtk.main_quit);
 
 var colorbutton = new Gtk.ColorButton();
 colorbutton.set_use_alpha(true);
-colorbutton.connect("color-set", function() {on_color_set(colorbutton)});
+colorbutton.connect("color-set", on_color_set);
 window.add(colorbutton);
 
 window.show_all();

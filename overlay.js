@@ -18,8 +18,8 @@ textview.set_hexpand(true);
 overlay.add(textview);
 
 var button = new Gtk.Button({label: "Overlayed Button"});
-button.set_valign(Gtk.Align.CENTER)
-button.set_halign(Gtk.Align.CENTER)
+button.set_valign(Gtk.Align.CENTER);
+button.set_halign(Gtk.Align.CENTER);
 overlay.add_overlay(button);
 
 window.show_all();

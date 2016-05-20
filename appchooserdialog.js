@@ -11,7 +11,7 @@ var response = appchooserdialog.run();
 if (response == Gtk.ResponseType.OK)
 {
     var info = appchooserdialog.get_app_info();
-    print("Selected application: " + info.get_name())
+    print("Selected application: " + info.get_name());
 }
 
 appchooserdialog.destroy();

@@ -15,7 +15,7 @@ frame.set_label("Frame Example");
 window.add(frame);
 
 var label = new Gtk.Label();
-label.set_label("Label in a Frame")
+label.set_label("Label in a Frame");
 frame.add(label);
 
 window.show_all();

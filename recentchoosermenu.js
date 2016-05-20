@@ -26,7 +26,7 @@ var menuitem = new Gtk.MenuItem({label: 'Recent'});
 menubar.add(menuitem);
 
 var recentchoosermenu = new Gtk.RecentChooserMenu();
-recentchoosermenu.connect('item-activated', on_item_activated)
+recentchoosermenu.connect('item-activated', on_item_activated);
 menuitem.set_submenu(recentchoosermenu);
 
 window.show_all();

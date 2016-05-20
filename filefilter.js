@@ -15,17 +15,17 @@ filefilter.add_pattern("*");
 filechooserdialog.add_filter(filefilter);
 
 var filefilter = new Gtk.FileFilter();
-filefilter.set_name("Audio")
-filefilter.add_mime_type("audio/flac")
-filefilter.add_mime_type("audio/ogg")
-filechooserdialog.add_filter(filefilter)
+filefilter.set_name("Audio");
+filefilter.add_mime_type("audio/flac");
+filefilter.add_mime_type("audio/ogg");
+filechooserdialog.add_filter(filefilter);
 
 var filefilter = new Gtk.FileFilter();
-filefilter.set_name("Images")
-filefilter.add_pattern("*.png")
-filefilter.add_pattern("*.jpg")
-filefilter.add_pattern("*.bmp")
-filechooserdialog.add_filter(filefilter)
+filefilter.set_name("Images");
+filefilter.add_pattern("*.png");
+filefilter.add_pattern("*.jpg");
+filefilter.add_pattern("*.bmp");
+filechooserdialog.add_filter(filefilter);
 
 if (filechooserdialog.run() == Gtk.ResponseType.OK)
 {

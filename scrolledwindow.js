@@ -18,12 +18,12 @@ layout.set_vexpand(true);
 layout.set_hexpand(true);
 scrolledwindow.add(layout);
 
-var button = new Gtk.Button({label: "Button 1"})
-layout.put(button, 645, 140)
-var button = new Gtk.Button({label: "Button 2"})
-layout.put(button, 130, 225)
-var button = new Gtk.Button({label: "Button 3"})
-layout.put(button, 680, 350)
+var button = new Gtk.Button({label: "Button 1"});
+layout.put(button, 645, 140);
+var button = new Gtk.Button({label: "Button 2"});
+layout.put(button, 130, 225);
+var button = new Gtk.Button({label: "Button 3"});
+layout.put(button, 680, 350);
 
 window.show_all();
 

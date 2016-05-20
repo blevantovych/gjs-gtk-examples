@@ -23,8 +23,8 @@ button.connect('clicked', on_popover_launched);
 box.add(button);
 
 var popover = new Gtk.Popover();
-popover.set_position(Gtk.PositionType.RIGHT)
-popover.set_relative_to(button)
+popover.set_position(Gtk.PositionType.RIGHT);
+popover.set_relative_to(button);
 
 var box = new Gtk.Box();
 box.set_orientation(Gtk.Orientation.VERTICAL);

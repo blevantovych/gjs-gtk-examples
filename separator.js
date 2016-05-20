@@ -15,13 +15,13 @@ window.add(grid);
 var separator = new Gtk.Separator();
 separator.set_hexpand(true);
 separator.set_vexpand(true);
-grid.attach(separator, 0, 0, 1, 1)
+grid.attach(separator, 0, 0, 1, 1);
 
 var separator = new Gtk.Separator();
 separator.set_orientation(Gtk.Orientation.VERTICAL);
 separator.set_hexpand(true);
 separator.set_vexpand(true);
-grid.attach(separator, 1, 0, 1, 1)
+grid.attach(separator, 1, 0, 1, 1);
 
 window.show_all();
 

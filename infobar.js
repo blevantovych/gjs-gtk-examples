@@ -23,14 +23,14 @@ var grid = new Gtk.Grid();
 grid.set_row_spacing(5);
 window.add(grid);
 
-var label = new Gtk.Label({label: "An InfoBar used to display messages."});
-
 var infobar = new Gtk.InfoBar();
-var content = infobar.get_content_area()
-content.add(label);
 infobar.set_show_close_button(true);
 infobar.connect("response", function() {on_info_bar_close(infobar)});
 grid.attach(infobar, 0, 0, 1, 1);
+
+var content = infobar.get_content_area();
+var label = new Gtk.Label({label: "An InfoBar used to display messages."});
+content.add(label);
 
 var buttonbox = new Gtk.ButtonBox({orientation: Gtk.Orientation.HORIZONTAL});
 buttonbox.set_spacing(5);

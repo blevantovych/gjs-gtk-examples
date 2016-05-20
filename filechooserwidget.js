@@ -4,10 +4,9 @@ const Gtk = imports.gi.Gtk;
 
 Gtk.init(null);
 
-function on_button_clicked(widget)
+function on_file_activated()
 {
-    print("Selected file: " + widget.get_filename());
-    Gtk.main_quit();
+    print("Selected file: " + filechooserwidget.get_filename());
 }
 
 var window = new Gtk.Window();
@@ -22,15 +21,8 @@ window.add(grid);
 
 var filechooserwidget = new Gtk.FileChooserWidget();
 filechooserwidget.set_vexpand(true);
+filechooserwidget.connect("file-activated", on_file_activated)
 grid.attach(filechooserwidget, 0, 0, 1, 1);
-
-var buttonbox = new Gtk.ButtonBox();
-buttonbox.set_layout(Gtk.ButtonBoxStyle.END);
-grid.attach(buttonbox, 0, 1, 1, 1);
-
-var buttonSelect = new Gtk.Button({label: "Select"});
-buttonSelect.connect("clicked", function() {on_button_clicked(filechooserwidget)});
-buttonbox.add(buttonSelect);
 
 window.show_all();
 

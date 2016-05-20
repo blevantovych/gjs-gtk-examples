@@ -67,7 +67,7 @@ assistant.append_page(box);
 assistant.set_page_type(box, Gtk.AssistantPageType.CONFIRM);
 assistant.set_page_title(box, "Page 4: Confirm");
 var label = new Gtk.Label({label: "The 'Confirm' page may be set as the final page in the Assistant, however this depends on what the Assistant does. This page provides an 'Apply' button to explicitly set the changes, or a 'Go Back' button to correct any mistakes."});
-label.set_line_wrap(true)
+label.set_line_wrap(true);
 box.pack_start(label, true, true, 0);
 assistant.set_page_complete(box, true);
 

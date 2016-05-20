@@ -6,7 +6,7 @@ Gtk.init(null);
 
 function on_volume_changed(volumebutton)
 {
-    print("Current volume: " + volumebutton.get_value());
+    print("VolumeButton value: " + volumebutton.get_value());
 }
 
 var window = new Gtk.Window();

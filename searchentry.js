@@ -6,7 +6,7 @@ Gtk.init(null);
 
 function on_search_entry_activated(searchentry)
 {
-    print("SearchEntry text: '" + searchentry.get_text() + "'");
+    print("SearchEntry text: " + searchentry.get_text());
 }
 
 var window = new Gtk.Window();

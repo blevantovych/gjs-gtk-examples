@@ -17,7 +17,7 @@ var box = new Gtk.Box({orientation: Gtk.Orientation.VERTICAL});
 window.add(box);
 
 var checkbutton = new Gtk.CheckButton({label: "SearchBar visible"});
-checkbutton.connect("toggled", function() {on_search_bar_toggled()});
+checkbutton.connect("toggled", on_search_bar_toggled);
 box.add(checkbutton);
 
 var searchbar = new Gtk.SearchBar();

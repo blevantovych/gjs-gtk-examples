@@ -27,7 +27,7 @@ var toolbutton3 = new Gtk.RadioToolButton({label: "Rewind"});
 toolbutton3.set_icon_name("gtk-media-rewind");
 toolbar.add(toolbutton3);
 var toolbutton4 = new Gtk.RadioToolButton({label: "Fast Forward",
-                                            group: toolbutton3});
+                                           group: toolbutton3});
 toolbutton4.set_icon_name("gtk-media-forward");
 toolbar.add(toolbutton4);
 

@@ -7,7 +7,7 @@ Gtk.init(null);
 function on_application_activated(appchooserwidget)
 {
     var info = appchooserwidget.get_app_info();
-    print("Selected application: " + info.get_name())
+    print("Selected application: " + info.get_name());
 }
 
 var window = new Gtk.Window({type: Gtk.WindowType.TOPLEVEL});

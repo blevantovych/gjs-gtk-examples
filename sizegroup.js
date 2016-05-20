@@ -8,7 +8,7 @@ var window = new Gtk.Window();
 window.set_title("SizeGroup");
 window.connect("destroy", Gtk.main_quit);
 
-var grid = new Gtk.Grid()
+var grid = new Gtk.Grid();
 window.add(grid);
 
 var sizegroup = new Gtk.SizeGroup();
